@@ -41,7 +41,7 @@ body{
   background-color: #3D3D58;
   span{
     width: calc(100% - 30px);
-    display: inline;
+    display: inline-block;
     color: #fff;
     white-space: nowrap;
     overflow: hidden;
