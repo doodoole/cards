@@ -11,7 +11,7 @@ body{
   overflow-x: hidden;
 }
 .row.cards{
-  overflow: scroll;
+  overflow-x: scroll;
   width: 100vw;
   flex-wrap: inherit;
   background-color: #313145;
@@ -135,12 +135,15 @@ body{
   height: calc(100vh - 120px);
   overflow: hidden;
 }
-.row-inside{
-  height: calc(100vh - 252px);
-  overflow: scroll;
-  .row{
-    --bs-gutter-x: 0;
-  }
+.row-inside {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	height: calc(100vh - 252px);
+	overflow: scroll;
+	.row {
+		--bs-gutter-x: 0;
+	}
 }
 .footer{
   padding: 10px 10px;
