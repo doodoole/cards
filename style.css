@@ -13,12 +13,17 @@ body {
 }
 
 .row.cards {
-  overflow: scroll;
+  overflow-x: scroll;
   width: 100vw;
   -ms-flex-wrap: inherit;
       flex-wrap: inherit;
   background-color: #313145;
 }
+
+.row-inside::-webkit-scrollbar {
+  display: none;
+}
+
 
 .row.cards .first {
   background-color: #BD2327;
